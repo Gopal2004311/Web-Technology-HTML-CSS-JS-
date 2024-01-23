@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>validation</title>
+        <style>
+            div{
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>user login</h1>
+        <form action="Q19.html" name="myform">
+        <label for="name">user name</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass"><br>
+        <button onclick="Login()">login</button><br>
+    </form>
+    </div>
+    <script>
+        function Login(){
+            var n = document.forms["myform"]["name"].value;
+            var p = document.forms["myform"]["password"].value;
+            if(n=="student"&& p=="1234"){
+             
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>factors of no.</title>
+</head>
+<h1>accept a number and display its factors using array!</h1>
+
+<body>
+    Enter a number: <input type="number" id="num"><br>
+    <br>
+    <button onclick="array()">click me!</button><br>
+
+
+    <script>
+        function array() {
+            let arr = Array();
+            let j=0;
+            let n = document.getElementById("num").value;
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    arr[j] = i;
+                    j++;
+                }
+            }
+            document.write(arr);
+        }
+
+    </script>
+</body>
+
+</html>

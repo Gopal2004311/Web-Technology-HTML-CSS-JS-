@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>multiplication table </title>
+    </head>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">display multiplication table </h1>
+    <body>
+        Enter a number for mult table: <input type="number" id="mult"><br>
+        <br>
+        Enter a number for how many times mult them : <input type="number" id="num"><br>
+        <br>
+        <button onclick="multy()">click me!</button><br>
+        <br>
+  
+        <script type="text/javascript">
+            function multy()
+            {
+                let n = document.getElementById("mult").value;
+                let num = document.getElementById("num").value;
+                let m = 1;
+                for(var i=1;i<=num;i++)
+                {
+                    m = n*i;
+                    document.write(m+"<br>");
+                   //document.getElementById("output").innerText = (m+"<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

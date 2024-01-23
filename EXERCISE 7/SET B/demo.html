@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100%;
+            background: fixed;
+            background-color: #c075a9;
+        }
+        div{
+            margin-top: 10px;
+            margin-left: 10px;
+            color: red;
+            margin-right: 1000px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        ul{
+            margin-top: 0;
+           font-size: 40px;
+            display: flex;
+            gap :60px;
+            align-items: center;
+            margin-left: 700px;
+        }
+        ul:hover::before{
+            content: "";
+            position: relative;
+            padding-bottom: 0;
+            color: #c075a9;
+        }
+        ul:after:hover{
+            position: absolute;
+            padding-bottom: 2px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <div><h1>ONLINE SHOPPING</h1>
+   <ul>
+    <li>home</li>
+    <li>about</li>
+    <li>contact</li>
+    <li>login</li>
+   </ul>
+</div> 
+</body>
+</html>

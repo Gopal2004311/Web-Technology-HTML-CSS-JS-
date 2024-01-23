@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="day"></span>
+    <span id="date"></span>
+    <span id="time"></span>
+    <script type="text/javascript">
+        function clock()
+        {
+            var date = new date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var midday;
+
+            hours = updateTime(hours);
+            minutes = updateTime(minutes);
+            seconds = updateTime(seconds);
+            var name = "Gopal";
+            //if else statement!
+            midday = (hours>=12)?"PM":"AM";
+
+            document.getElementById("time").innerHTML = hours+":"+minutes+":"+seconds+midday;
+            var time = setTimeout(function(){
+                clock();
+            },1000);
+
+            //Good morning, afternoon, evening condition
+            if(hours<12){
+                var greeting = "Good Morning"+name+"hurry up!";
+
+            }
+            if(hours>=12 && hours<=18){
+                var greeting = "Good Afternoon"+name;
+            }
+            if(hours>=18&&hours<=24){
+                var greeting = "Good evening"+name;
+            }
+            document.getElementById("greeting").innerHTML = greeting;
+        }
+
+        function updateTime(k){
+            i
+        }
+    </script>
+</body>
+</html>

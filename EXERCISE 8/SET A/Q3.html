@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        check number is armstrong or not!
+    </title>
+</head>
+<h1>check given number is armstrong or not!</h1>
+
+<body>
+    enter a number: <input type="number" id="arm"><br>
+    <br>
+    <button onclick="armstrong()">click me!</button><br>
+    <br>
+    <p id="output"></p><br>
+    <br>
+    <script type="text/javascript">
+        function armstrong() {
+            let n = document.getElementById("arm").value;
+            let d, pow = 1;
+            let tmp = n;                                        //3
+            let sum = 0;                                        //1*3=3*3=9*3=27
+            while (tmp != 0) {
+                d = tmp % 10;
+                // console.log("digit="+d);
+                for (var i = 1; i <= n.length; i++) {
+                    pow *= d;
+                    // console.log("power of digit="+pow);   
+                }
+                sum += pow;
+                console.log("sum of pow=" + sum);
+                pow = 1;
+                // console.log("after sum value of pow="+pow);
+                tmp = parseInt(tmp / 10);
+                // console.log("after division number="+tmp);
+            }
+            if (sum == n) {
+                // document.write("number is armstrong!");
+                document.getElementById("output").innerText = n + " number is armstrong number!"
+            }
+            else {
+                document.getElementById("output").innerText = n + " number is not a armstrong number!"
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

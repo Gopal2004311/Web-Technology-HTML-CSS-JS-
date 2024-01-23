@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>perfect or not!</title>
+    </head>
+    <h1>check a number is perfect or not!</h1>
+    <body>
+        Enter a number: <input type="number" id="per"><br>
+        <br>
+        <button onclick="Perfect()">click me!</button><br>
+        <br>
+        <script type="text/javascript">
+            function Perfect()
+            {
+                var n = document.getElementById("per").value;
+                var s = 0;
+                var num = n;
+                for(i=1;i<n;i++)
+                {
+                    if(n%i==0)
+                    {
+                        s = s + i;
+                    }
+
+                }
+                if(num==s)
+                {
+                    document.write(num+" no is perfect number!");
+                }
+                else
+                {
+                    document.write(num+" no is not perfect number!");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>volume of sphere!</title>
+    </head>
+    <style>
+        body{
+            background-color:rgb(7, 184, 243);
+            height: 300px;
+            width: 80%;
+            align-items: center;
+           font-style: italic;
+           font-weight: bold;
+        }
+        .first{
+            border: 1px solid #000000;
+            text-align: center;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            background-color: lightcyan;
+            color: navy;
+            border-radius: 5px;
+
+        }
+        .second{
+            border: 1px solid #000000;
+            text-align: center;
+            align-items: center;
+            margin-left: 120px;
+            background-color: violet;
+            border-radius: 5px;
+        }
+        .second input{
+            outline: none;
+            background-color: seagreen;
+            border-radius: 5px;
+            box-shadow: #000000;
+        }
+    button{
+       border-radius: 10px;
+       border-color: #d4a5e1;
+        cursor: pointer;
+        
+        color: red;
+        margin-bottom: 10px;
+    }
+    </style>
+    <body>
+        <div class="first">
+    <h1>input radius value and get the volume of a sphere!</h1><br>
+    </div>
+    <div class="second">
+        radius: <br> <input type="number" id="rad"><br>
+        <br>
+        volume: <br>
+        <input type="text" id="result"><br>
+       <br>
+       <button onclick="Click()">Calculate</button>
+       </div>
+        <script type="text/javascript">
+            function Click()
+        {
+            let r1 = document.getElementById("rad").value;
+                let pi1 = 3.14;
+                let v1;
+                v1 = 4/3*pi1*r1*r1*r1;
+                document.getElementById("result").value = v1.toFixed(2) ;
+          
+        }
+            
+        </script>
+    </body>
+</html>

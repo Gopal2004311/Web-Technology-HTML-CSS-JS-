@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>image map</title>
+    </head>
+  <style>
+    body{
+        background-color: #fd4a5d;
+    }
+    img{
+        align-items: center;
+        text-align: center;
+        
+        border-radius: 10px;
+        border-color: #0c0102;
+        
+    }
+   .circle:hover{
+        background-color: #fd4a5d;
+   }
+  </style>
+    <body>
+        <img src="india.jpg" alt="india.jpg" height="350" width="350"usemap="#india">
+        <map name="india">
+            <area shape="circle" coords="25,34,30" href="on-off.html" alt="second" class="circle">
+            <area shape="circle" coords="111,252,47" href="on-off.html" alt="">
+            <area shape="poly" coords="132,38,179,40,200,70,196,91,151,98,136,68" href="on-off.html" alt="">
+        </map>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>find the x <sup>y</sup></h1>
+    x : <input type="number" id="x"><br>
+    <br>
+    y : <input type="number" id="y"><br>
+    <br>
+    x <sup>y</sup>: <input type="text" id="output"><br>
+    <br>
+    <button onclick="click()">calculate</button>
+    <script type="text/javascript">
+        function click(){
+            let x = document.getElementById("x").value;
+            let y = document.getElementById("y").value;
+            let p = 1;
+            console.log(p);
+            for(var i=1;i<=y;i++)
+            {
+                p=p*x;
+                console.log(p);
+            }
+            document.getElementById("output").value = p; 
+        }
+    </script>
+
+</body>
+</html>

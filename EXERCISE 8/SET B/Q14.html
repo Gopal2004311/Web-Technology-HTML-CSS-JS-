@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>create html form!</title>
+</head>
+<style>
+    .form {
+        display: flex;
+        margin-left: 20%;
+        flex-wrap: wrap;
+    }
+
+    .containt {
+        border: 1px solid black;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #f8f198;
+    }
+
+    input {
+        display: flex;
+        flex-wrap: wrap;
+        outline: none;
+        
+    }
+</style>
+
+<body>
+    <div class="containt">
+        <h1 align="center">student registraition form</h1><br>
+        <div class="form">
+            <form action="#">
+                name: <input type="text" id="name"class="formerror">
+                <p id="n"></p>
+                address: <input type="text" id="address"class="formerror">
+                <span id="add"></span>
+                <br>
+                city: <br><input type="text" id="city"class="formerror">
+                    
+                </select><br>
+                pin-code: <br><input type="text" id="pin"class="formerror"><br>
+                
+                    <input type="submit" name="submit" value="submit" id="sub" onclick="Form()"><br>
+                    <input type="reset" name="reset" value="reset" id="res">
+             
+            </form>
+
+        </div>
+        
+    </div>
+    <script>
+        function clearErrors(){
+
+            errors=document.getElementsByClassName('fromerror');
+            for(let item of errors)
+            {
+                item.innerHTML="";
+            }
+        }
+        function remove(id,error)
+        {
+           let error1=document.getElementById(id).value;
+            document.write(error).innerHTML;
+        } 
+        function form()
+        {
+           var returnvalue=true;
+            clearErrors();
+            var name=document.getElementById("name").value;
+            if(name=="")
+            {
+                remove("name","please enter your name!");
+                returnvalue=false;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

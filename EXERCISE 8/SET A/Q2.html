@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>sum of digit </title>
+    </head>
+    <h1>sum of digit for given number</h1>
+    <body>
+        Enter a number for sum of digit:<input type="number" id="num"><br>
+       <p id="output"></p>
+        <button onclick="sumOfDigit()">click me!</button><br>
+        <br>
+        <script type="text/javascript">
+            function sumOfDigit()
+            {
+                let n = document.getElementsByid("num").value;
+                let d = 0;
+                let s = 0;
+                while(n!=0)
+                {
+                    d = parseInt(n%10);
+                    s = s+d;
+                    n = parseInt(n/10);
+                }
+               document.write("sum of digit="+s);
+             // document.getElementById("output").innerText = "sum of digits="+s;
+            }
+        </script>
+    </body>
+</html>

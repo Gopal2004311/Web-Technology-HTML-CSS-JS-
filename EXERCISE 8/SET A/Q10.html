@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>display odd no.</title>
+    </head>
+    <h1>to display all odd numbers up to given number!</h1><br>
+    <body>
+        Enter a number: <input type="number" id="odd"><br>
+        <br>
+        <button onclick="Oddnum()">click me!</button><br>
+        <br>
+        <script type="text/javascript">
+            function Oddnum()
+            {
+                let n = document.getElementById("odd").value;
+               for(var i=1;i<n;i++)
+               {
+                if(i%2!=0)
+                {
+                    document.write(i+"<br>");
+                }
+               }
+            }
+        </script>
+    </body>
+</html>

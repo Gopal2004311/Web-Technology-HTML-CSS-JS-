@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>sum of odd</title>
+    </head>
+    <style>
+        #output{
+            margin-left: 11px;
+        }
+    </style>
+    <h1>sum of all odd digits of the given number!</h1><br>
+    <br>
+    <body>
+        Enter a number: <input type="number" id="num"><br>
+        <br>
+        sum of digits : <input type="text" id="output"><br>
+        <br>
+        <button onclick="SumOfDigit()">click me!</button><br>
+        <br>
+        <script type="text/javascript">
+            function SumOfDigit(){
+                let sum = 0;
+                let n = document.getElementById("num").value;
+                let d;
+                while(n!=0)
+                {
+                    d = parseInt(n%10);
+                    if(d%2!==0)
+                    {
+                        sum=sum+d;
+                    }
+                    n = parseInt(n/10);
+                }
+                document.getElementById("output").value = sum;
+            }
+        </script>
+    </body>
+</html>

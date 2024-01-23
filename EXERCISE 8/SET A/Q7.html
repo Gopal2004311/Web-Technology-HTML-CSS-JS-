@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>count occurances!</title>
+    </head>
+    <h1>count occurances of the given charector in a string!</h1> <br>
+<body>
+    
+
+    Enter a string : <input type="text" id="occ"><br>
+    <br>
+    Enter any charector: <input type="text" id="char"><br>
+    <br>
+    occurance's: <input type="text" id="output"><br>
+    <br>
+    <button onclick="Occur()">click me!</button>
+    <script type="text/javascript">
+        function Occur()
+        {
+            let str = document.getElementById("occ").value;
+            let ch = document.getElementById("char").value;
+            let count = 0;
+            for(var i=1;i<=str.length;i++)
+            {
+                if(str[i]==ch)
+                {
+                    count++;
+                }
+            }
+            if(count>0)
+            {
+             //   document.write("occurances of "+ch+" is "+count);
+             document.getElementById("output").value = count;
+             
+            }
+            else{
+            //    document.write("given charector does not exist in a string!")
+            document.write("given charector does not exist in a string!");
+            }
+        }
+    </script>
+</body>
+</html>

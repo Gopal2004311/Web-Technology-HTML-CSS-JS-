@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                align-items: center;
+                text-align: center;
+                height: 300px;
+                width: 100%;
+                justify-content: center;
+            }
+            div {
+                font-size: 50px;
+                text-align: center;
+                justify-content: center;
+                margin-top: 100px;
+                margin-left: 25%;
+                margin-right: 25%;
+                border: 1px solid black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+<body>
+    <div>
+    <span id="output"></span>
+</div>
+<div id="second">
+    <span id="out"></span>
+</div>
+    <script type="text/javascript">
+    
+       /* let b = 10;
+        let a = 20;
+         
+         console.log(a);
+         console.log(b);
+        var j = document.getElementsByName("input").value;
+        document.getElementById("output").value = j;
+        /* var a1 = new Array(10);
+         for(var i=0;i<10;i++){
+            a1[i] = prompt("enter "+i+"element of array");
+         }
+         document.write(a1);
+         console.log(a1);*/ 
+         const b2 = new Date();
+         const day = b2.getDay();
+         const month = b2.getMonth();
+         const year = b2.getFullYear();
+         const h = b2.getHours();
+         const m = b2.getMinutes();
+         const s = b2.getSeconds();
+         console.log(b2);
+         document.getElementById("output").innerHTML = day+"/"+month+"/"+year;
+         document.getElementById("out").innerHTML = "   "+h+":"+m+":"+s;
+       //document.write(day+"/"+month+"/"+year+"   "+h+":"+m+":"+s);
+    </script>
+</body>
+</html>

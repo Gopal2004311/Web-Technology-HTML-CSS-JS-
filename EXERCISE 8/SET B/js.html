@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body bgcolor="red">
+        <h1>enter a number and display its factorial!</h1>
+        enter a number: <input type="number" name="" id="input"><br>
+        <br>
+        <button onclick="click()">click</button>
+        <br>
+        <script type="text/javascript">
+            function click(){
+                let n = document.getElementById("input").value;
+                let fact = 1;
+                let i = 1;
+                for(i<=n;i++;){
+                    fact = fact*i;
+                }
+                document.write("factorial of"+n+"is="+fact);
+            }
+        </script>
+    </body>
+</html>

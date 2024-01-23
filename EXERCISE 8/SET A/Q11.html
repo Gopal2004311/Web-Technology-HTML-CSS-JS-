@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>pattern</title>
+    </head>
+    <h1>print the following pattern!</h1>
+    * <br>
+    * * <br>
+    * * * <br>
+    <br>
+    Enter a limit for pattern: <input type="number" id="limit"><br>
+    <br>
+    <button onclick="Pattern()">click me!</button><br>
+    <br>
+    <script type="text/javascript">
+        function Pattern(){
+            let n = document.getElementById("limit").value;
+            for(var i=1;i<=n;i++)
+            {
+                for(var j=1;j<=i;j++)
+                {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</html>

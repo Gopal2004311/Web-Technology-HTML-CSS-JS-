@@ -1,0 +1,33 @@
+body{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.first{
+    font-display: block;
+    font-size: larger;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second{
+    font-size: large;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.third{
+    font-size: medium;
+    color: rgb(2, 179, 248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.four{
+    font-size: small;
+    color: #ee5908;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.five{
+    font-size: smaller;
+    color: #f7a204;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
